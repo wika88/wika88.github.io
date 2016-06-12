@@ -265,7 +265,7 @@ input[type=button] {
 
 .header {
   background-color: white;
-  height: 500px;
+  height: 31em;
 }
 
 .header_container {
@@ -536,7 +536,7 @@ input[type=button] {
 }
 
 #hello {
-  height: 650px;
+  height: 40.5em;
   background-color: #ede9e3;
 }
 
@@ -688,7 +688,7 @@ h4 {
 }
 
 #main {
-  height: 650px;
+  height: 40.5em;
 }
 
 .main_container {
@@ -703,7 +703,7 @@ div[class^="birthdaycake_"] {
 
 .birthdaycake_result {
   width: 65%;
-  height: 350px;
+  height: 22em;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -711,7 +711,7 @@ div[class^="birthdaycake_"] {
 
 .birthdaycake_colours {
   width: 35%;
-  height: 350px;
+  height: 22em;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -995,12 +995,12 @@ div[class^="birthdaycake_"] {
 }
 
 #dimension {
-  height: 500px;
+  height: 31em;
 }
 
 .dimension_container {
   width: 900px;
-  height: 330px;
+  height: 20.5em;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -1066,20 +1066,20 @@ div[class^="birthdaycake_"] {
 
 .summary_form {
   width: 50%;
-  height: 450px;
+  height: 28em;
   float: left;
 }
 
 .summary_inputs {
   width: 50%;
-  height: 450px;
+  height: 28em;
   float: left;
   padding: 0.5em;
 }
 
 .summary_button {
   width: 100%;
-  height: 100px;
+  height: 6.25em;
   clear: both;
 }
 
@@ -1104,7 +1104,7 @@ div[class^="birthdaycake_"] {
 
 .table_layers {
   width: 100%;
-  height: 50px;
+  height: 3em;
 }
 
 .table_layers td {
@@ -1156,7 +1156,7 @@ div[class^="birthdaycake_"] {
 }
 
 #contact {
-  height: 720px;
+  height: 45em;
 }
 
 .contact_container {

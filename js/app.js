@@ -105,12 +105,12 @@ function showNavText(){
     $(this).on("mouseenter", function(){
       $(this).find("p").animate({
         opacity: 1
-      }, 500);
+      }, 200);
     });
     $(this).on("mouseleave", function(){
       $(this).children().animate({
         opacity: 0.2
-      }, 500);
+      }, 200);
     });
   });
 }
