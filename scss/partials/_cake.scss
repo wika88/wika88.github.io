@@ -1,0 +1,164 @@
+#main {
+  height: 650px;
+}
+
+.main_container {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+  // border: $testBorder;
+}
+
+
+div[class^="birthdaycake_"]{
+  float: left;
+  // border: $testBorder;
+}
+
+//TORT
+.birthdaycake_result {
+  width: 65%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.birthdaycake_colours {
+  width: 35%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+.rainbow_cake {
+  background-color: white;
+  border: $cakeBorder;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 4% 5% 0 5%;
+  box-shadow: $cakeShadow;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.layers_container {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:  flex-end;
+}
+
+@for $i from $layersAmount through 1 {
+  .layer_#{$i} {
+    width: $layerWidth;
+    height: $layerHeigth;
+    // background-image: url("../images/img-noise.png");
+    // background-repeat: repeat;
+    background-color: $layerColor;
+    background-image: url("../images/img-noise.png");
+    background-repeat: repeat;
+    background-position: 100px*$i;
+    border: $cakeBorder;
+    // box-shadow:  inset 1px 1px 4px 0px rgba(0,0,0,0.41);
+    margin-top: 3%;
+    border-radius: 10px;
+   }
+}
+
+//COLORS OF LAYERS
+.colours {
+  width: 100%;
+  height: auto;
+}
+
+@for $i from 1 through $layersAmount {
+  .colour_#{$i} {
+    width: ($layersAmount+1) * $layerHeigth;
+    height: $layerHeigth;
+    margin-top: 4%;
+   }
+}
+
+@for $i from 1 through ($layersAmount + 1) {
+  .button#{$i} {
+    width: $layerHeigth;
+    height: $layerHeigth;
+    float: left;
+    box-shadow: $cakeShadow;
+    border-radius: 10%;
+   }
+}
+
+.button1{
+  background-color: $button1color;
+}
+.button2{
+  background-color: $button2color;
+}
+.button3{
+  background-color: $button3color;
+}
+.button4{
+  background-color: $button4color;
+}
+.button5{
+  background-color: $button5color;
+}
+.button6{
+  background-color: $button6color;
+}
+.button7{
+  background-color: $layerColor;
+  // border: 2px solid grey;
+  position: relative;
+  // right: 1em;
+  // top: 32px;
+  width: $layerHeigth;
+  height: $layerHeigth;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 1;
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    left: 16px;
+    top: -4px;
+    content: ' ';
+    height: 125%;
+    width: 2px;
+    background-color: #333;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+
+.add_layer_button, .remove_layer_button {
+  @include button(1, 1);
+  display: inline-block;
+}
+
+// .send_cake {
+//   width: 100%;
+//   height: auto;
+//   display: flex;
+//   justify-content: flex-end;
+//   padding: 3% 7%;
+//   button {
+//     @include button(3, 2);
+//
+//   }
+// }

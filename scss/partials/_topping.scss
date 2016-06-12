@@ -1,0 +1,14 @@
+#topping {
+  background-color: white;
+  height: 500px;
+}
+
+.topping_container{
+  width: 900px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+*[class^=".topping"] {
+  border: $testBorder;
+}
